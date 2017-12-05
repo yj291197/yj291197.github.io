@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenges</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="qw.css">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-103889477-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+       
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+      
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <form class="navbar-form navbar-left">
+
+
+            </form>
+            <ul class="nav navbar-nav navbar-right n">
+                <li><a href="./index.html">HOME </a></li>
+
+                <li><a href="./final_marker/map.html">MAPS </a></li>
+
+                <li><a href="./challenges.html">CHALLENGES </a></li>
+
+             
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<H2>
+
+</H2>
+<h1><bold>CHALLENGES</bold></h1>
+
+
+<p >
+    In India Google street view is not available, hence collecting data was a huge challenge on the first step. I tried asking friends and other undergrads to get us some pictures of roads. That data was too little that I couldn’t train our algorithm and most of the images were not that good.
+    I decided to classify some available images on the basis of  population, sharp turns, road conditions etc. and wrote a program which downloads an image from the google images using assigned tags and finds the similarity between the classified images and the new downloaded image and if it feels it is okay, it separates it and put it in our training dataset.
+    <br>
+    <br>
+</p>
+
+<table border="6" class="table" style="width:800px" BORDERCOLOR="#595652" BORDERCOLORLIGHT="#33CCFF" BORDERCOLORDARK="#0000CC">
+    <tr>
+        <th align="center">
+            RSI CRITERIA
+        </th>
+        <th>
+            GENERAL IDEA
+        </th>
+        <th>
+            APPROX. INDEX
+        </th>
+    </tr>
+    <tr>
+        <td>
+            Cars, people, road construction, obstacles on the road, poor road condition, narrow roads, no proper divider or road boundary.
+        </td>
+        <td>
+            Whatever that is on the road or that blocks the road.
+        </td>
+        <td>
+            ~ 1-3
+        </td>
+    </tr>
+    <tr>
+        <td>
+            more than sufficient trees on the sides and on divider, enough broad roads, nearby construction, irregular terrain, water pots
+        </td>
+
+        <td>
+            Whatever that is on the side of the road. The things which would make the situation worse if vehicle gets uncontrollable.
+        </td>
+
+        <td>
+            ~ 4-7
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            Proper road width, proper road condition,
+            Divider and side boundary present.
+
+        </td>
+
+        <td>
+            Nothing near or anywhere on the road.
+        </td>
+
+        <td>
+            ~ 8-10
+        </td>
+    </tr>
+</table>
+
+<p>
+
+    The next thing that comes is how to perform survey. I first thought of creating a webpage like <a href="http://pulse.media.mit.edu/" >PlacePulse</a> but that needs a lot of patience as who would click on that website that frequently. Hence, I decided to make google forms and forward them to our college google groups and the result were pretty good.</p>
+</p>
+
+<div class="qwe">
+
+
+<img src="./algo%20comp%20graph.png"style="width:500px;height:300px;";>
+<img src="first%20level%20feature%20graph.png" style="width:500px;height:300px;">
+</div>
+
+<br>
+<br>
+<p>
+
+I then used different machine learning algorithms and compared them on the basis of their correctness and predicting time. Feature selection was itself a heavy task but I outperformed it and finalized three features to use for our project.
+
+</p>
+
+
+<footer>&copy; Copyright 2017 ANUJ VARSHNEY</footer>
+<script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+<script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+
+
+
+</body>
+</html>
