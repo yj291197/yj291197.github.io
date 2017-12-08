@@ -1,2 +1,2 @@
-# yj291197.github.io
-My website
+# Renewed-RSI-website
+Renewed RSI Website
